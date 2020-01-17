@@ -1,0 +1,2720 @@
+@font-face {
+    font-family: "Champagne_Limousines";
+    src: url('assets/Champagne_Limousines.ttf');
+    }  
+/* html {
+    height: 100vh;
+     width: 100vw;
+} */
+/* body,html{
+    height: 100vh;
+    width: 100vw;
+} */
+body {
+    position: relative; 
+    background: url("assets/back.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#home{
+    position: absolute;
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 100%;
+}
+.intro{
+    position: relative;
+     /* border: 2px solid darkmagenta;  */
+}
+#title{
+    position: absolute;
+    /* border: 2px solid darkblue; */
+    top: 3%;
+    left: 3%;
+    width: 100%;
+    height: 35%;
+    color: FAAD47;
+    font-size: 34pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+#texte{
+    position: absolute;
+    /* border: 2px solid darkorange; */
+    text-align: center;
+    top: 39%;
+    width: 90%;
+    height: 60%;
+    font-size: 100%;
+    color: FFFFFF;
+    font-size: 30pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold;
+    padding-left: 8%;
+    letter-spacing: 0.05em;
+
+}
+#btn_lancer{
+    position: relative;
+    background: url("assets/bouton-lancer.png") no-repeat center center;
+    background-size: contain;
+     /* border: 2px solid chartreuse;  */
+}
+.men{
+    position: absolute;
+    background: url("assets/man-intro.png") no-repeat center center;
+    background-size: contain;
+    /* border: 2px solid peachpuff;  */
+}
+.code{
+    position: absolute;
+    height: 6%;
+    /* border: 1px solid white; */
+    width: 13%;
+    margin-left: 90%;
+    color: white;
+    font-size: 65%;
+    transform: rotate(-90deg);
+    letter-spacing: 0.06em;
+}
+
+/* style de chaque question    background-color: blueviolet; */
+.question{
+    position: relative;
+    /* border: 2px solid fuchsia;   */
+    height: 12%;
+    width: 88%;
+    top: 5%;
+    left: 5%;
+    color: FFFFFF;
+    padding-top: 4%;
+    font-size: 30pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold;
+    letter-spacing: 0.06em;
+}
+/* les proposition des reponses de chaque question */
+.grid {
+    display: grid ;
+    height: 50%;
+    width: 65%;
+    margin: 0 auto;
+    margin-left: 5%;
+    grid-template-rows: 18% 18% 18% 18% 18%;
+    grid-template-columns: unset;
+    float: left;
+    margin-top: 0%;
+    row-gap: 15%;
+
+}
+input[type='checkbox'] {
+    display: none ;
+}
+    /* question no cheked style */
+input[type='checkbox'] + label {
+    height: 90%;
+    width: 90%;  
+    background: url(assets/rec_orange.png) no-repeat ;
+     /* background-color: rgba(250, 90, 32, 0.87);   */
+    background-size: cover ;
+    /* text-align: center ; */
+    vertical-align: middle ;
+    color: white;
+    /* padding-left:2%; */
+    padding-bottom: 2%;
+    font-size: 16pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold;
+    box-shadow: 0px 15px 10px -15px #111; 
+    letter-spacing: 0.06em;
+    vertical-align:middle;
+    /* padding-inline-start: 2%; */
+    -moz-padding-start: 2%;
+    -webkit-padding-start: 2%;
+    -khtml-padding-start: 2%;
+    -o-padding-start: 2%;
+    /* padding-start: 2%; */
+}
+    /* question cheked style */
+input[type='checkbox']:checked + label {
+    color: F47D2B;
+    background: url(assets/rec_blanc.png) no-repeat ;
+    background-size: cover ;
+    /* background-color: gray; */
+
+}
+.center-grid{
+    display: grid ;
+    place-content: start ;
+
+}
+
+/****************************position men**************************/
+#men {
+    position: absolute;
+    height: 60%;
+    width: 25%;
+    right: 0%;
+    float: right ;
+
+}
+/******************************boutton suivant ********************/
+
+ #btn_suivant_pass{
+    place-content: start stretch;
+    background: url("assets/bouton_valider.png") no-repeat;
+    background-size: contain;
+    /* border: 2px solid silver;     */
+    /* position: relative;
+    left: 0%;
+    width: 50%;
+    height: 19%;
+    float: left; */
+
+
+} 
+/******************************num question ********************/
+/* #demi{
+    border: 2px solid purple;    
+
+} */
+/* #globnum{
+    place-content: end;
+    position: relative;
+    float: right;
+    width: 50%;
+    /* margin: 0 auto; */
+    /* color: white;
+    font-size: 30pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold; */
+    /* border: 2px solid seagreen;     */
+
+/*} */
+#num{
+    position: fixed;
+    bottom: 2%;
+    left: 61%;
+    right: 25%;
+    width: 50%;
+    height: 10%;
+    margin: 0 auto;
+    color: white;
+    font-size: 30pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold;
+}
+/**********************reponse**************************/
+.grid_rep{
+    display: grid;
+    height: 60%;
+    width: 65%;
+    margin: 0 auto;
+    margin-left: 5%;
+    grid-template-rows: 93% 17% 15%;
+    grid-template-columns: 80%;
+    float: left;
+    margin-top: 0%;
+}
+#flamme{
+    position: absolute;
+    width: 13%;
+    height: 26%;
+    top: 28%;
+    right: 23.5%;
+    -webkit-animation: apparition 0.75s infinite linear;
+}
+ @keyframes apparition{
+    from {
+    opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+ }
+ #response_text{
+    color: white;
+    font-size: 16pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold;
+    text-align: left;
+    Line-Height: 1.5;
+    text-align: justify;
+    letter-spacing: 0.07em;
+    /* border: 2px solid seagreen;   */
+ }
+
+ #referance{
+     color: white;
+     Line-Height: 1.5;
+    font-size: 80%; 
+    letter-spacing: 0.06em;
+    /* border: 2px solid khaki;   */
+
+
+ }
+#btn_suivant_next{
+    place-content: start ;
+    background: url("assets/bouton_suivant.png") no-repeat;
+    background-size: contain;
+    font-family: "Champagne_Limousines";
+     /* border: 2px solid silver;   */  
+} 
+/* #globnum{
+    place-content: end;
+    position: relative;
+    float: right;
+    width: 50%;
+    /* margin: 0 auto; */
+    /* color: white;
+    font-size: 30pt;
+    font-family: "Champagne_Limousines";
+    font-weight: bold; */
+    /* border: 2px solid seagreen;     */
+
+/*} */
+
+/*****************score**************************/
+#score{
+    position: absolute;
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Champagne_Limousines";
+    font-weight: bold;
+}
+#merci{
+    position: relative;
+    /* border: 2px solid darkmagenta;  */
+    font-size: 12pt;
+    width: 60%;
+    height:10%;
+    top: 10%;
+    left: 5%;
+    font-size: 50pt;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+#resultat{
+    position: relative;
+    /* border: 2px solid seagreen;  */
+    font-size: 12pt;
+    width: 40%;
+    height:10%;
+    top: 25%;
+    left: 15%;
+    font-size: 30pt;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+#btn_relancer {
+    position: relative;
+    background: url("assets/bouton_rejouer.png") no-repeat center center;
+    background-size: contain;
+     /* border: 2px solid chartreuse;  */
+     width: 20%;
+     height: 10%;
+     top: 50%;
+     left: 25%; 
+ 
+    } 
+    
+
+
+/**************************************************/
+@media only screen AND (max-width: 320px){
+    .code {
+        height: 6%;
+        width: 39%;
+        margin-left: 73%;
+        font-size: 43%;
+        top: 68%;
+    }
+    /************spalshscreen**************/
+    .intro{
+        margin-top: 20%;
+        width: 100%;
+        height: 36%;
+    }    
+    #btn_lancer{
+        width: 43%;
+        height: 8%;
+        top: 39%;
+        left: 28%;
+    }
+    .men{
+        /* display: none; */
+        width: 35%;
+        height: 31%;
+        left: 35%;
+        top: 53%;
+    }
+    #title{
+        font-size: 9pt;
+        left: 0%;
+
+    }
+    #texte{
+        font-size: 9pt;
+        /* left: 3%; */
+        top: 49%;
+        width: 100%;
+        padding-left: 0%;
+    }
+     /*****************les slides du jeu**********************/
+     .question{
+        font-size: 11.5pt;
+        width: 90%;
+    }
+    #men{
+        display: none;
+        height: 28%;
+        width: 28%;
+    }
+    #flamme{
+        width: 15%;
+        height: 11%;
+        top: 13%;
+        right: 85%;
+    
+    }
+    .grid{
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12%;
+        margin-top: 3%;
+        height: 75%;
+        width: 95%;
+        row-gap: 10%;
+    }
+    #num{
+        font-size: 14pt;
+        left: 78%;
+        top: 85%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 7%;
+        font-size: 8pt;
+    }
+    .grid_rep{
+        grid-template-rows: 66% 25% 12%;
+        grid-template-columns: 93%;
+        margin-top: 0%;
+        width: 97%;
+        height: 75%;
+        row-gap: 1%;
+
+    }
+    #response_text{
+        font-size: 8pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+    #response_text span{
+        font-size: 100%;
+    }
+    .sup{
+        font-size: 6pt;
+    }
+    #referance{
+        font-size: 48%;
+    }
+    /***********slide score **************/
+    #merci{
+        width: 95%;
+        left: 0%;
+        top: 23%;
+        font-size: 12pt;
+    }
+    #resultat{
+        width: 75%;
+        top: 26%;
+        font-size: 10pt;
+        left: 10%;
+    }
+    #btn_relancer{
+        top: 64%;
+        left: 28%;
+        height: 10%;
+        width: 47%;
+    }
+
+}
+
+@media (min-width: 321px) AND (max-width: 479px){
+    /**************splashscreen***************/
+    .code{
+        height: 5%;
+        /* border: 1px solid white; */
+        width: 30%;
+         margin-left: 75%;
+        top: 70%;
+        font-size: 46%;
+    }
+    .intro{
+        top: 10%;
+        width: 96%;
+        height: 40%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 100%; */
+        width: 46%;
+        height: 7%;
+        top: 43%;
+        left: 28%;
+    }
+    .men{
+        /* background-size: 100% 80%;  */
+        width: 43%;
+        height: 33%;
+        top: 48%;
+        right: 26%;
+    }
+    #title{
+        font-size: 11pt;
+        left: 0%;
+    }
+
+    
+    #texte{
+        font-size: 10pt;
+        padding-left: 0%;
+        width: 100%;
+    }
+    /*****************les slides du jeu**********************/
+    .question{
+        font-size: 10pt;
+    }
+    #men{
+        display: none;
+        height: 28%;
+        width: 28%;
+    }
+    #flamme{
+        display: none;
+        width: 15%;
+        height: 9%;
+        top: 14%;
+        right: 86%;
+    }
+    .grid{
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 10%;
+        margin-top: 0%;
+        height: 77%;
+        width: 95%;
+        row-gap: 10%;
+
+    }
+    #num{
+        font-size: 15pt;
+        /* bottom: 23%; */
+        top: 85%;
+        left: 78%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 5%;
+        font-size: 8pt;
+        letter-spacing: 0.1em;  
+    }
+    .grid_rep{
+        grid-template-rows: 58% 24.8% 9.3%;
+        grid-template-columns: 90%;
+        margin-top: 0%;
+        width: 97%;
+        height: 81.8%;
+        row-gap: 1%;
+    }
+    #response_text{
+        width: 100%;
+        font-size: 8pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+    #response_text span{
+        font-size: 120%;
+    }
+    .sup{
+        font-size: 9pt;
+    }
+    #referance{
+        font-size: 53%;
+        text-align: justify;
+    }
+    /***********slide score **************/
+    #merci{
+        width: 90%;
+        /* left: 7%; */
+        font-size: 16pt;
+        top: 15%;
+    }
+    #resultat{
+        width: 70%;
+        top: 20%;
+        font-size: 12pt;
+    }
+    #btn_relancer{
+        top: 65%;
+        height: 8%;
+        width: 42%;
+        left: 31%;
+    }
+
+}
+
+@media (min-width: 480px) AND (max-width: 500px){
+    /*****************splash screen********************/
+    .intro{
+        top: 10%;
+        width: 60%;
+        height: 60%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 100%; */
+        width: 30%;
+        height: 13%;
+        top: 9%;
+        left: 20%;
+    }
+    .men{
+        /* background-size: 100% 80%; */
+        width: 35%;
+        height: 83%;
+        top: 2%;
+        right: 0%;
+    }
+    #title{
+        font-size: 12pt;
+        left: 6%;
+    }
+    #texte{
+        font-size: 8pt; 
+        top: 51%;
+        width: 100%; 
+    }
+    /*****************les slides du jeu**********************/
+    .question{
+        font-size: 10pt;
+    }
+    #men{
+        display: none;
+        height: 75%;
+        width: 33%;
+    }
+    #flamme{
+        width: 15%;
+        height: 14%;
+        top: 18%;
+        /* right: 88%; */
+        left: -2%;
+    
+    }
+    .grid{
+        grid-template-rows: 18% 18% 18% 18% 21%;
+        margin-top: 0%;
+        width: 95%;
+    }
+    #num{
+        font-size: 12pt;
+        /* bottom: 38%; */
+        left: 84%;
+        top: 83%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 3%;
+        font-size: 8pt;
+    }
+    .grid_rep{
+        grid-template-rows: 91% 29% 19%;
+        margin-top: 0%;
+        width: 95%;
+        height: 55%;
+
+    }
+    #response_text{
+        font-size: 8pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+    #referance{
+        font-size: 42%;
+    }
+    /***********slide score **************/
+    #merci{
+        width: 73%;
+        /* left: 7%; */
+        font-size: 16pt;
+    }
+    #resultat{
+        width: 53%;
+        top: 20%;
+        font-size: 11pt;
+    }
+    #btn_relancer{
+        top: 35%;
+        height: 10%;
+        width: 26%;
+        left: 28%;
+    }
+}
+
+@media (min-width: 501px) AND (max-width: 740px){
+    /*****************splash screen********************/
+    .code{
+        height: 6%;
+        /* border: 1px solid white; */
+        width: 22%;
+        margin-left: 85%;
+        top: 51%;
+        font-size: 55%;
+    }
+    .intro{
+        top: 10%;
+        width: 70%;
+        height: 64%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 100%; */
+        width: 27%;
+        height: 14%;
+        top: 18%;
+        left: 24%;
+    }
+    .men{
+        /* background-size: 100% 80%; */
+        width: 30%;
+        height: 83%;
+        top: 6%;
+        right: 0%;
+    }
+    #title{
+        font-size: 14pt;
+        left: 6%;
+        top: 0%;
+    }
+    #texte{
+        font-size: 12pt;
+        top: 45%;
+    }
+    /*****************les slides du jeu**********************/
+    .question{
+        font-size: 12pt;
+        top: 4%;
+    }
+    #men{
+        height: 74%;
+        width: 31%;
+        top: 17%;
+    }
+    #flamme{
+        width: 11%;
+        height: 17%;
+        top: 33%;
+        right: 25%;
+    }
+    .grid{
+        grid-template-rows: 15% 15% 15% 15% 14.5%;
+        margin-top: 0%;
+        height: 75%;
+        width: 68%;
+        row-gap: 8%;
+    }
+    #num{
+        font-size: 15pt;
+        top: 87%;
+        left: 57%;
+        width: 7%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 4%;
+        font-size: 9pt;
+        letter-spacing: 0.08em;
+    }
+    .grid_rep{
+        grid-template-rows: 56% 29% 14%;
+        margin-top: 0%;
+        width: 72%;
+        height: 79%;
+        row-gap: 1%;
+    }
+    #response_text{
+        font-size: 7.5pt;        
+        Line-Height: 1.5;
+        text-align: justify;
+        letter-spacing: 0.075em;
+    }
+    #response_text span{
+        font-size: 113%;
+    }
+    #referance{
+        font-size: 48%;
+    }
+    sup{
+        font-size: 7pt;
+    }
+    /***********slide score **************/
+    #merci{
+        width: 71%;
+        left: 5%;
+        top: 13%;
+        font-size: 20pt;
+    }
+    #resultat{
+        width: 50%;
+        top: 20%;
+        font-size: 15pt;
+    }
+    #btn_relancer{
+        top: 35%;
+        height: 13%;
+        left: 26%;
+        width: 31%;
+
+    }    
+}
+
+/***************portrait*******************/
+@media (min-height: 420px){
+@media (min-width: 501px) AND (max-width: 740px){
+    /*****************splash screen********************/
+    .intro{
+        top: 10%;
+        width: 98%;
+        height: 50%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 100%; */
+        width: 34%;
+        height: 8%;
+        top: 40%;
+        left: 35%
+    }
+    .men{
+        /* background-size: 100% 80%; */
+        width: 30%;
+        height: 32%;
+        top: 54%;
+        right: 32%;
+    }
+    #title{
+        font-size: 15pt;
+        left: 0%;
+        top: 0%;
+    }
+    #texte{
+        font-size: 13pt;
+        top: 31%;
+        padding-left: 4%;
+    }
+    /*****************les slides du jeu**********************/
+    .question{
+        font-size: 14pt;
+        top: 4%;
+        height: 10%;
+        width: 90%;
+    }
+    #men{
+        display: none;
+        height: 74%;
+        width: 31%;
+        top: 17%;
+    }
+    #flamme{
+        width: 11%;
+        height: 10%;
+        top: 8%;
+        right: 88%;
+    }
+    .grid{
+        grid-template-rows: 12% 12% 12% 12% 12%;
+        margin-top: 0%;
+        height: 61%;
+        width: 94%;
+        row-gap: 10%;
+    }
+    #num{
+        font-size: 16pt;
+        top: 69%;
+        left: 84%;
+        width: 7%;
+        height: 4%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 4%;
+        font-size: 12pt;
+        letter-spacing: 0.08em;
+    }
+    .grid_rep{
+        grid-template-rows: 60% 23.3% 11.8%;
+        grid-template-columns: 98%;
+        margin-top: 0%;
+        width: 85%;
+        height: 63%;
+        row-gap: 1%;
+    }
+    #response_text{
+        font-size: 10pt;
+        Line-Height: 1.5;
+        text-align: justify;
+        letter-spacing: 0.075em;
+    }
+    #response_text span{
+        font-size: 130%;
+    }
+    #referance{
+        font-size: 53%;
+    }
+    sup{
+        font-size: 7pt;
+    }
+    /***********slide score **************/
+    #merci{
+        width: 87%;
+        left: 5%;
+        top: 13%;
+        font-size: 22pt;
+    }
+    #resultat{
+        width: 69%;
+        top: 18%;
+        font-size: 17pt;
+    }
+    #btn_relancer{
+        top: 67%;
+        height: 7%;
+        left: 36%;
+        width: 33%;
+
+    }    
+}
+}
+
+/********************paysage********************/
+@media (max-height: 420px){
+    @media (min-width: 499px) AND (max-width: 530px){
+        /*****************splash screen********************/
+        .intro{
+            top: 8%;
+            width: 61%;
+            height: 66%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 22%;
+            height: 14%;
+            top: 18%;
+            left: 20%;
+        
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 33%;
+            height: 87%;
+            top: 7%;
+            right: 2%;
+        }
+        #title{
+            font-size: 62%;
+            left: 3%;
+            top: 0%;
+        }
+        #texte{
+            font-size: 47%;
+            top: 50%;
+            padding-left: 7%;
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 55%;
+            top: 1%;
+            height: 10%;
+            width: 90%;
+            left: 2%;
+        }
+        #men{
+            height: 74%;
+            width: 31%;
+            top: 17%;
+        }
+        #flamme{
+            width: 10%;
+            height: 13%;
+            top: 34%;
+            right: 21%;
+        }
+        .grid{
+            grid-template-rows: 13% 13% 13% 13% 15.5%;
+            margin-top: 1%;
+            height: 89%;
+            width: 68%;
+            row-gap: 8%;
+            margin-left: 2%;
+        }
+        #num{
+            font-size: 9pt;
+            top: 89%;
+            left: 52%;
+            width: 7%;
+            height: 4%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 4%;
+            font-size: 50%;
+            letter-spacing: 0.08em;
+        }
+        .grid_rep{
+            grid-template-rows: 60% 25% 15%;
+            margin-top: 0%;
+            width: 85%;
+            height: 90%;
+            row-gap: 1%;
+            /* left: 5%; */
+            margin-left: 2%;
+        }
+        #response_text{
+            font-size: 40%;
+            Line-Height: 1.5;
+            text-align: justify;
+            letter-spacing: 0.075em;
+        }
+        #response_text span{
+            font-size: 90%;
+        }
+        #referance{
+            font-size: 37%;
+        }
+        sup{
+            font-size: 5pt;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 61%;
+            left: 2%;
+            top: 13%;
+            font-size: 16pt;
+        }
+        #resultat{
+            width: 45%;
+            top: 29%;
+            font-size: 12pt;
+            left: 10%;
+        }
+        #btn_relancer{
+            top: 46%;
+            height: 12%;
+            left: 21%;
+            width: 19%;
+        }    
+}
+}
+    
+@media (min-width: 741px) AND (max-width: 1024px){
+    /* #home{
+        top: 3%;
+    } */
+    /***************splashscreen*****************/
+    .code {
+        height: 5%;
+        width: 15%;
+        margin-left: 87%;
+        font-size: 50%;
+        top: 51%;
+       }
+    .intro{
+        margin: 0%;
+        width: 67%;
+        height: 65%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 100%; */
+        width: 22%;
+        height: 9%;
+        top: 0%;
+        left: 23%;
+    }
+    .men{
+        /* background-size: 100% 90%; */
+        width: 35%;
+        height: 69%;
+        top: 12%;
+        right: 0%;
+    }
+    #title{
+        font-size: 16pt;
+        top: 15%;
+    }
+    #texte{
+        font-size: 15pt;
+        top: 44%    
+        /* left: 8%; */
+    }
+    /*************les slides du jeu*****************/
+    .question{
+        font-size: 16pt;
+        width: 90%;
+        height: 6%;
+        padding-top: 6%;
+    
+    }
+    #men{
+        height: 63%;
+        width: 34%;
+        top: 18%;
+    }
+    #flamme {
+        position: absolute;
+        width: 10%;
+        height: 13%;
+        top: 32%;
+        right: 28.5%;
+    }
+    .grid{
+        grid-template-rows: 13% 13% 13% 13% 14%;
+        margin-top: 2%;
+        height: 61%;
+        row-gap: 10%;
+    }
+    #num{
+        font-size: 20pt;
+        left: 51%;
+        top: 81%;
+        width: 10%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 3%;
+        font-size: 13pt;
+    }
+    .grid_rep{
+        grid-template-rows: 60.2% 22% 12.1%;
+        margin-top: 1%;
+        width: 72%;
+        height: 70%;
+        width: 72%;
+        margin-top: 1%;
+    }
+    #response_text{
+        font-size: 10pt;       
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+    #response_text span{
+        font-size: 145%;
+    }
+    #referance{
+        font-size: 75%;
+        letter-spacing: 0.08em;
+    }
+    /***********slide score **************/
+    #merci{
+        font-size: 27pt;
+    }
+    #resultat{
+        top: 23%;
+        font-size: 19pt;
+        width: 47%;
+        left: 11%;
+    }
+    #btn_relancer{
+        top: 25%;
+        width: 22%;
+    }
+}
+
+/**************portrait***************/
+@media (min-height: 800px){
+@media (min-width: 741px) AND (max-width: 1024px){
+    /* #home{
+        top: 3%;
+    } */
+    /***************splashscreen*****************/
+    .intro{
+        top: 9%;
+        width: 67%;
+        height: 54%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 100%; */
+        width: 23%;
+        height: 6%;
+        top: 0%;
+        left: 23%;
+    }
+    .men{
+        /* background-size: 100% 90%; */
+        width: 37%;
+        height: 48%;
+        top: 16%;
+        right: 0%;
+    }
+    #title{
+        font-size: 15pt;
+        top: 20%;
+    }
+    #texte{
+        height: 32%;
+        font-size: 13pt;
+        top: 48% 
+     /* left: 8%; */;
+    }
+    /*************les slides du jeu*****************/
+    .question{
+        font-size: 16pt;
+        width: 90%;
+        height: 6%;
+        padding-top: 6%;
+    
+    }
+    #men{
+        height: 53%;
+        width: 33%;
+        top: 14%;
+    }
+    #flamme {
+        position: absolute;
+        width: 9%;
+        height: 9%;
+        top: 29%;
+        right: 28.5%;
+    }
+    .grid{
+        grid-template-rows: 10% 10% 10% 10% 9.5%;
+        margin-top: 2%;
+        height: 68%;
+        row-gap: 8%;
+    }
+    #num{
+        font-size: 20pt;
+        left: 51%;
+        top: 64%;
+        width: 10%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 3%;
+        font-size: 10pt;
+    }
+    .grid_rep{
+        grid-template-rows: 58.5% 22% 10.3%;
+        margin-top: 1%;
+        width: 72%;
+        height: 62%;
+        width: 72%;
+        margin-top: 1%;
+    }
+    #response_text{
+        font-size: 9pt;       
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+    #response_text span{
+        font-size: 135%;
+
+    }
+    #referance{
+        font-size: 59%;
+        letter-spacing: 0.08em;
+    }
+    /***********slide score **************/
+    #merci{
+        font-size: 23pt;
+        top: 17%;
+        width: 63%;
+        left: 5%;
+    }
+    #resultat{
+        top: 23%;
+        font-size: 18pt;
+        width: 47%;
+        left: 12%;
+    }
+    #btn_relancer{
+        top: 25%;
+        width: 23%;
+        height: 6%;
+    }
+}
+}
+@media (min-width: 1025px) AND (max-width: 1299px){
+    /***********splashscreen************/
+    .intro{
+        /* background-size: 100% 90%; */
+        margin: 1%;
+        width: 70%;
+        height: 61%;
+        left: 0%;
+        top: 5%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 90%; */
+        width: 22%;
+        height: 9%;
+        top: 4%;
+        left: 27%;
+    }
+    .men{
+        /* background-size: 100% 90%; */
+        width: 31%;
+        height: 80%;
+        top: 0%;
+        right: 0%;
+    }
+    #title{
+        font-size: 22pt;
+        top: 6%;
+        height: 27%;
+    }
+    #texte{
+        font-size: 19pt;
+        height: 48%;
+        top: 44%;
+    }
+    /*************les slides du jeu*****************/
+    .question{
+        font-size: 20pt;
+        position: relative;
+        /* border: 2px solid fuchsia; */
+        padding-top: 2%;
+
+    }
+    #men{
+        height: 60%;
+        width: 33%;
+        top: 19%;
+    }
+    #flamme {
+        position: absolute;
+        width: 12%;
+        height: 22%;
+        top: 27%;
+        right: 26%;
+    }
+    .grid{
+        margin-top: 2%;
+        height: 57%;
+        grid-template-rows: 15% 15% 15% 15% 15%;
+        row-gap: 10%;
+
+    }
+    #num{
+        font-size: 22pt;
+        /* bottom: 27%; */
+        left: 51%;
+        top: 76%;
+        width: 5%;
+    }
+    input[type='checkbox'] + label {
+        font-size: 13pt;
+    }
+    .grid_rep{
+        height: 75%;
+        width: 65%;
+        margin-top: 0%;
+        grid-template-rows: 60% 19.8% 11.3%;
+        row-gap: 1%;
+    }
+    #response_text {
+        font-size: 13pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+    #referance{
+        font-size: 59%;
+        letter-spacing: 0.085em;
+    }
+    /**************score*******************/
+    #merci{
+        left: 7%;
+        font-size: 33pt;
+        top: 15%;
+    }
+    #resultat{
+        font-size: 21pt;
+    }
+    #btn_relancer{
+        top: 35%;
+    }
+}
+
+
+
+@media (min-width: 1300px) AND (max-width: 1600px){
+    .code {
+        top: 49%;
+        width: 29%;
+        margin-left: 82%;
+        color: white;
+        font-size: 76%;
+    
+    }
+    /***********splashscreen************/
+    .intro{
+        /* background-size: 100% 90%; */
+        margin: 1%;
+        width: 70%;
+        height: 60%;
+        left: 0%;
+        top: 6%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 90%; */
+        width: 22%;
+        height: 10%;
+        top: 0%;
+        left: 28%;
+    }
+    .men{
+        /* background-size: 100% 90%; */
+        width: 31%;
+        height: 76%;
+        top: 5%;
+        right: 0%;
+    }
+    #title{
+        font-size: 25pt;
+        top: 10%;
+    }
+    #texte{
+        font-size: 22pt;
+    }
+    /*************les slides du jeu*****************/
+    .question{
+        font-size: 22pt;
+        height: 10%;
+    }
+    #men{
+        height: 56%;
+        width: 33%;
+        top: 17%;
+    }
+    #flamme {
+        position: absolute;
+        width: 10%;
+        height: 20%;
+        top: 25%;
+        right: 24%;
+    }
+    .grid{
+        margin-top: 0%;
+        height: 63%;
+        grid-template-rows: 14% 14% 14% 14% 13%;
+        row-gap: 7%;
+    }
+    #num{
+        font-size: 22pt;
+        /* bottom: 27%; */
+        left: 49%;
+        top: 70%;
+        width: 6%;
+    }
+    input[type='checkbox'] + label {
+        font-size: 15pt;
+    }
+    .grid_rep{
+        height: 61%;
+        width: 65%;
+        grid-template-rows: 66.5% 18% 13.5%;
+        margin-top: 0%;
+        row-gap: 1%;
+    }
+    #response_text {
+        font-size: 12pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+
+    #response_text span{
+            font-size: 115%;
+    }
+    #referance{
+        font-size: 74%;
+    }
+    /**************score*******************/
+    #merci{
+        left: 7%;
+        font-size: 40pt;
+        top: 15%;
+    }
+    #resultat{
+        font-size: 25pt;
+        top: 26%;
+    }
+    #btn_relancer{
+        top: 35%;
+        width: 22%;
+        height: 8%;
+        left: 25%;
+    }
+}
+
+@media (min-width: 1601px) AND (max-width: 1899px){
+    /***********splashscreen************/
+    .intro{
+        /* background-size: 100% 90%; */
+        margin: 1%;
+        width: 70%;
+        height: 60%;
+        left: 0%;
+        top: 11%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 90%; */
+        width: 24%;
+        height: 8%;
+        top: 9%;
+        left: 27%;
+    }
+    .men{
+        /* background-size: 100% 90%; */
+        width: 33%;
+        height: 65%;
+        top: 15%;
+        right: 0%;
+    }
+    #title{
+        font-size: 30pt;
+        top: 10%;
+        height: 25%;
+    }
+    #texte{
+        height: 45%;
+        font-size: 26pt;
+        top: 45%;
+    }
+    /*************les slides du jeu*****************/
+    .question{
+        font-size: 27pt;
+    }
+    #men{
+        position: absolute;
+        height: 62%;
+        top: 17%;
+        width: 33%;
+        right: 0%;
+        float: right;
+    }
+    #flamme {
+        position: absolute;
+        width: 13%;
+        height: 20%;
+        top: 28%;
+        right: 25%;    
+    }
+    .grid{
+        margin-top: 0%;
+        height: 68%;
+        grid-template-rows: 14% 14% 14% 14% 11%;
+        row-gap: 7%;
+    }
+    #num{
+        font-size: 26pt;
+        /* bottom: 27%; */
+        left: 52%;
+        top: 78%;
+        width: 9%;
+    }
+    input[type='checkbox'] + label {
+        font-size: 19pt;
+    }
+    .grid_rep{
+        height: 70%;
+        width: 65%;
+        margin-top: 0%;
+        row-gap: 1%;
+        grid-template-rows: 62% 17.5% 10.8%;
+    }
+    #response_text {
+        font-size: 15pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+
+    #response_text span{
+            font-size: 120%;
+    }
+    #referance{
+        font-size: 90%;
+    }
+    /**************score*******************/
+    #merci{
+        left: 7%;
+        font-size: 42pt;
+        top: 17%;
+    }
+    #resultat{
+        font-size: 27pt;
+        top: 26%;
+    }
+    #btn_relancer{
+        top: 35%;
+        width: 23%;
+        height: 8%;
+        left: 24%;
+    }
+}
+
+
+/********************Ipad AIR2 paysage******************/
+@media  (min-width: 1900px){
+     /***********splashscreen************/
+     .intro{
+        /* background-size: 100% 90%; */
+        margin: 1%;
+        width: 70%;
+        height: 50%;
+        left: 0%;
+        top: 7%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 90%; */
+        width: 20%;
+        height: 9%;
+        top: 12%;
+        left: 28%;
+    
+    }
+    .men{
+        /* background-size: 100% 90%; */
+        width: 31%;
+        height: 76%;
+        top: 5%;
+        right: 0%;
+    }
+    #title{
+        font-size: 38pt;
+        top: 3%;
+        height: 35%;
+    }
+    #texte{
+        font-size: 36pt;
+        height: 62%;
+    }
+    /*************les slides du jeu*****************/
+    .question{
+        font-size: 30pt;
+    }
+    #men{
+        position: absolute;
+        height: 66%;
+        top: 15%;
+        width: 32%;
+        right: 0%;
+        float: right;
+    }
+    #flamme {
+        position: absolute;
+        width: 15%;
+        height: 26%;
+        top: 26%;
+        right: 23.5%;
+    }
+    .grid{
+        margin-top: 0%;
+        height: 65%;
+        grid-template-rows: 14% 14% 14% 14% 13%;
+        row-gap: 10%;
+    }
+    #num{
+        font-size: 40pt;
+        /* bottom: 27%; */
+        left: 53%;
+        top: 82%;
+        width: 9%;
+    }
+    input[type='checkbox'] + label {
+        font-size: 28pt;
+    }
+    .grid_rep{
+        height: 75%;
+        width: 64%;
+        margin-top: 0%;
+        grid-template-rows: 62% 19% 11.3%;
+        row-gap: 1%;
+    }
+    #response_text {
+        font-size: 16pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+
+    #response_text span{
+            font-size: 140%;
+    }
+    #referance{
+        font-size: 120%;    
+    }
+    /**************score*******************/
+    #merci{
+        left: 7%;
+        font-size: 55pt;
+        top: 15%;
+    }
+    #resultat{
+        font-size: 43pt;
+        top: 26%;
+        width: 48%;
+        left: 13%;
+    }
+    #btn_relancer{
+        top: 35%;
+        width: 22%;
+        height: 8%;
+        left: 25%;
+    }
+}
+
+/********************24"******************/
+@media  (max-height: 1440px){
+@media  (min-width: 1900px){
+     /***********splashscreen************/
+     .intro{
+        /* background-size: 100% 90%; */
+        margin: 1%;
+        width: 70%;
+        height: 50%;
+        left: 0%;
+        top: 7%;
+    }
+    #btn_lancer{
+        /* background-size: 100% 90%; */
+        width: 20%;
+        height: 9%;
+        top: 12%;
+        left: 28%;
+    
+    }
+    .men{
+        /* background-size: 100% 90%; */
+        width: 31%;
+        height: 76%;
+        top: 5%;
+        right: 0%;
+    }
+    #title{
+        font-size: 32pt;
+        top: 3%;
+        height: 35%;
+    }
+    #texte{
+        font-size: 30pt;
+        height: 62%;
+    }
+    /*************les slides du jeu*****************/
+    .question {
+        font-size: 25pt;
+    }
+    #men{
+        position: absolute;
+        height: 66%;
+        top: 15%;
+        width: 32%;
+        right: 0%;
+        float: right;
+    }
+    #flamme {
+        position: absolute;
+        width: 13%;
+        height: 24%;
+        top: 25%;
+        right: 23%;
+    }
+    .grid{
+        margin-top: 0%;
+        height: 65%;
+        grid-template-rows: 14% 14% 14% 14% 13%;
+        row-gap: 10%;
+    }
+    #num{
+        font-size: 40pt;
+        /* bottom: 27%; */
+        left: 53%;
+        top: 82%;
+        width: 9%;
+    }
+    input[type='checkbox'] + label {
+        font-size: 20pt;
+
+    }
+    .grid_rep{
+        height: 75%;
+        width: 64%;
+        margin-top: 0%;
+        grid-template-rows: 62% 19% 11.3%;
+        row-gap: 1%;
+    }
+    #response_text {
+        font-size: 19pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+
+    #response_text span {
+        font-size: 135%;
+    }
+    #referance {
+        font-size: 100%;
+    }
+    /**************score*******************/
+    #merci{
+        left: 7%;
+        font-size: 55pt;
+        top: 15%;
+    }
+    #resultat{
+        font-size: 43pt;
+        top: 26%;
+        width: 48%;
+        left: 13%;
+    }
+    #btn_relancer{
+        top: 35%;
+        width: 22%;
+        height: 8%;
+        left: 25%;
+    }
+}
+}
+/************IpadMINI/IpadPro/Kindle Fire**************/
+@media (min-height: 1500px){
+
+    @media (min-width: 1024px) AND (max-width: 1990px){
+        /*****************splash screen********************/
+        .intro{
+            top: 0%;
+            width: 97%;
+            height: 38%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 29%;
+            height: 7%;
+            top: 44%;
+            left: 35%;
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 17%;
+            height: 38%;
+            top: 42%;
+            right: 41%;
+        }
+        #title{
+            font-size: 30pt;
+            left: 0%;
+            top: 6%;
+            height: 24%;
+        }
+        #texte{
+            font-size: 24pt;
+            top: 45%;
+            /* left: 0%; */
+            right: 5%;
+            height: 62%;
+        
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 25pt;
+            top: 7%;
+            height: 7%;
+            width: 95%;
+            padding-top: 7%;
+        }
+        #men{
+            display: none;
+            height: 44%;
+            width: 34%;
+            top: 14%;
+        
+        }
+        #flamme{
+            width: 12%;
+            height: 10%;
+            top: 20%;
+            right: 88%;
+        }
+        .grid{
+            grid-template-rows: 13% 13% 13% 13% 13%;
+            margin-top: 2%;
+            height: 55%;
+            width: 95%;
+            row-gap: 10%;
+        }
+        #num{
+            font-size: 30pt;
+            top: 73%;
+            left: 86%;
+            width: 7%;
+            height: 4%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 3%;
+            font-size: 22pt;
+        }
+        .grid_rep{
+            grid-template-rows: 58% 17% 10.7%;
+            grid-template-columns: 93%;
+            margin-top: 1%;
+            width: 94%;
+            height: 67%;
+        }
+        #response_text{
+            font-size: 18pt;
+            Line-Height: 1.5;
+            text-align: justify;
+        }
+        #response_text span{
+            font-size: 135%;
+        }
+        #referance{
+            font-size: 120%;
+        }                       
+        sup{
+            font-size: 16pt;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 89%;
+            /* left: 3%; */
+            top: 11%;
+            font-size: 53pt;
+        }
+        #resultat{
+            width: 70%;
+            top: 12%;
+            /* left: 12%; */
+            font-size: 36pt;
+        }
+        #btn_relancer{
+            top: 60%;
+            height: 7%;
+            left: 36%;
+            width: 29%;
+        }    
+    }
+}
+
+/**********************blackberry_playbook/nexus7*************************/
+@media (min-height: 850px){
+
+    @media (min-width: 480px) AND (max-width: 600px){
+        /*****************splash screen********************/
+        .intro{
+            top: 8%;
+            width: 100%;
+            height: 21%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 34%;
+            height: 6%;
+            top: 52%;
+            left: 34%;
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 38%;
+            height: 34%;
+            top: 34%;
+            right: 29%;
+        }
+        #title{
+            font-size: 15pt;
+            left: 1%;
+            top: 0%;
+        }
+        #texte{
+            font-size: 12pt;
+            top: 43%;
+            /* left: 0%; */
+            right: 5%;
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 15pt;
+            top: 4%;
+            height: 9%;
+            width: 92%;
+        }
+        #men{
+            display: none;
+            height: 35%;
+            width: 33%;
+            top: 11%;
+        }
+        #flamme{
+            width: 9%;
+            height: 8%;
+            top: 8%;            
+            right: 90%;
+        }
+        .grid{
+            grid-template-rows: 16% 15% 16% 16% 14%;
+            margin-top: 0%;
+            height: 43%;
+            width: 96%;
+            row-gap: 14%;
+        }
+        #num{
+            font-size: 18pt;
+            top: 64%;
+            left: 82%;
+            width: 7%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 4%;
+            font-size: 12pt;
+        }
+        .grid_rep{
+            grid-template-rows: 82% 31.5% 13%;
+            grid-template-columns: 100%;
+            margin-top: 0%;
+            width: 88%;
+            height: 45%;
+        }
+        #response_text{
+            font-size: 10pt;
+            Line-Height: 1.5;
+            text-align: justify;
+        
+        }
+        #response_text span {
+            font-size: 132%;
+        }
+        #referance{
+            font-size: 66%;
+        }        
+        sup{
+            font-size: 7pt;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 90%;
+            /* left: 3%; */
+            top: 13%;
+            font-size: 25pt;
+        }
+        #resultat{
+            width: 72%;
+            top: 14%;
+            /* left: 12%; */
+            font-size: 18pt;
+        
+        }
+        #btn_relancer{
+            top: 52%;
+            height: 7%;
+            left: 35%;
+            width: 33%;
+        }    
+    }
+}
+/***********lumia520/Iphone5/SE**********/
+@media (max-height: 320px){
+
+    @media (min-width: 530px) AND (max-width: 570px){
+        /*****************splash screen********************/
+        .intro{
+            top: 10%;
+            width: 74%;
+            height: 65%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 27%;
+            height: 12%;
+            top: 15%;
+            left: 24%;
+        
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 34%;
+            height: 83%;
+            top: 7%;
+            right: 0%;
+        }
+        #title{
+            font-size: 75%;
+            left: 1%;
+            top: 0%;
+
+        }
+        #texte{
+            font-size: 63%;
+            top: 43%;
+            /* left: 0%; */
+            right: 5%;
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 10pt;
+            top: 1%;
+            height: 7%;
+            width: 92%;
+            padding-top: 0%;
+            left: 2%;
+        }
+        #men{
+            height: 67%;
+            width: 30%;
+            top: 24%;
+        }
+        #flamme{
+            width: 9%;
+            height: 14%;
+            top: 38%;
+            right: 20%;        
+        }
+        .grid{
+            grid-template-rows: 18% 18% 18% 18% 25%;
+            margin-top: 3.5%;
+            height: 55%;
+            width: 64%;
+            row-gap: 14%;
+            margin-left: 2%;        
+        }
+        #num{
+            font-size: 9pt;
+            top: 87%;
+            left: 42%;
+            width: 7%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 4%;
+            font-size: 50%;
+        }
+        .grid_rep{
+            grid-template-rows: 55% 22% 14%;
+            margin-top: 0%;
+            width: 84%;
+            height: 95%;
+            row-gap: 1%;
+            margin-left: 2%;      
+        }
+        #response_text{
+            font-size: 50%;
+            Line-Height: 1.5;
+            text-align: justify;
+        }
+        #response_text span {
+            font-size: 148%;
+        }
+        #referance{
+            font-size: 49.5%;
+        }               
+        sup{
+            font-size: 10%;
+        }
+        #response_text span {
+            font-size: 139%;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 71%;
+            left: 3%;
+            top: 17%;
+            font-size: 17pt;
+        }
+        #resultat{
+            width: 52%;
+            top: 26%;
+            left: 12%;
+            font-size: 10pt;
+        }
+        #btn_relancer{
+            top: 38%;
+            height: 13%;
+            left: 24%;
+            width: 31%;
+        }    
+    }
+}
+
+/*****************Nokia N9/ IphoneX /Pixel2XL (paysage)*****************/
+
+@media (min-height: 375px)  {
+    @media (min-width: 812px) AND (max-width: 854px){
+        /*****************splash screen********************/
+        .intro{
+            top: 10%;
+            width: 74%;
+            height: 50%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 21%;
+            height: 13%;
+            top: 21%;
+            left: 26%;
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 29%;
+            height: 86%;
+            top: 4%;
+            right: 0%;
+        }
+        #title{
+            font-size: 15pt;
+            left: 1%;
+            top: 0%;
+        }
+        #texte{
+            font-size: 13pt;
+            top: 45%;
+            /* left: 0%; */
+            right: 5%;
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 15pt;
+            top: 1%;
+            height: 7%;
+            width: 92%;
+            padding-top: 3%;
+        }
+        #men{
+            height: 72%;
+            width: 30%;
+            top: 20%;
+        }
+        #flamme{
+            width: 11%;
+            height: 21%;
+            top: 32%;
+            right: 24%;
+        }
+        .grid{
+            grid-template-rows: 18% 18% 18% 18% 23%;
+            margin-top: 4%;
+            height: 47%;
+            width: 64%;
+            row-gap: 14%;
+        }
+        #num{
+            font-size: 15pt;
+            top: 83%;
+            left: 46%;
+            width: 7%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 3%;
+            font-size: 9pt;
+        }
+        .grid_rep{
+            grid-template-rows: 59% 20% 13%;
+            margin-top: 1%;
+            width: 69%;
+            height: 84%;
+        }
+        #response_text{
+            font-size: 10pt;
+            Line-Height: 1.5;
+            text-align: justify;
+        }
+        #response_text span {
+            font-size: 98%;
+        }
+        #referance{
+            font-size: 54%;
+        }                       
+        sup{
+            font-size: 7pt;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 71%;
+            left: 3%;
+            top: 17%;
+            font-size: 25pt;
+        }
+        #resultat{
+            width: 52%;
+            top: 29%;
+            left: 12%;
+            font-size: 17pt;
+        }
+        #btn_relancer{
+            top: 34%;
+            height: 18%;
+            left: 28%;
+            width: 18%;
+        }    
+    }
+}
+
+/*************IphoneX /nOKIAn9 PORTRAIT/**************/
+
+
+@media (min-height: 812px){
+    @media (min-width: 375px) AND (max-width: 480px){
+        /*****************splash screen********************/
+        .code {
+            height: 5%;
+            width: 33%;
+            margin-left: 74%;
+            font-size: 48%;
+            top: 68%;
+        }
+        .intro{
+            top: 7%;
+            width: 100%;
+            height: 36%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 41%;
+            height: 6%;
+            top: 52%;
+            left: 30%;
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 52%;
+            height: 41%;
+            top: 42%;
+            right: 23%;
+        }
+        #title{
+            font-size: 14pt;
+            left: 0%;
+            top: 0%;
+            height: 26%;
+        }
+        #texte{
+            font-size: 13pt;
+            top: 33%;
+            /* left: 0%; */
+            right: 0%;
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 12.5pt;
+            top: 0%;
+            height: 7%;
+            width: 91%;
+            padding-top: 15%;
+        
+        }
+        #men{
+            height: 72%;
+            width: 34%;
+            top: 20%;
+        }
+        #flamme{
+            width: 13%;
+            height: 13%;
+            top: 11%;
+            right: 88%;
+        }
+        .grid{
+            grid-template-rows: 18% 18% 18% 18% 12%;
+            margin-top: 4%;
+            height: 45%;
+            width: 97%;
+            row-gap: 15%;
+        }
+        #num{
+            font-size: 15pt;
+            top: 76%;
+            left: 79%;
+            width: 7%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 3%;
+            font-size: 10pt;
+        }
+        .grid_rep{
+            grid-template-rows: 57% 15.5% 6.5%;
+            grid-template-columns: 92%;
+            margin-top: 1%;
+            width: 97%;
+            height: 84%;
+        }
+        #response_text{
+            font-size: 10pt;
+            Line-Height: 1.5;
+            text-align: justify;
+        }
+        #referance{
+            font-size: 55%;
+        }                       
+        sup{
+            font-size: 7pt;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 95%;
+            left: 3%;
+            top: 16%;
+            font-size: 19pt;
+        }
+        #resultat{
+            width: 74%;
+            top: 21%;
+            left: 14%;
+            font-size: 14pt;
+        }
+        #btn_relancer{
+            top: 67%;
+            height: 8%;
+            left: 28%;
+            width: 46%;
+        }    
+    }
+}
+
+
+
+/************IpadMINI/IpadPro/Kindle Fire**************/
+@media (min-height: 1024px){
+
+    @media (min-width: 760px) AND (max-width: 1024px){
+        /*****************splash screen********************/
+
+        .code {
+            height: 5%;
+            width: 30%;
+            margin-left: 78%;
+            font-size: 90%;
+            top: 47%;
+        }
+        .intro{
+            top: 3%;
+            width: 100%;
+            height: 42%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 28%;
+            height: 6%;
+            top: 17%;
+            left: 37%;
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 27%;
+            height: 29%;
+            top: 30%;
+            right: 34%;
+        }
+        #title{
+            font-size: 19pt;
+            left: 0%;
+            top: 6%;
+            height: 19%;
+        }
+        #texte{
+            font-size: 16pt;
+            top: 30%;
+            /* left: 0%; */
+            right: 5%;
+            height: 33%;
+        
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 16pt;
+            top: 7%;
+            height: 7%;
+            width: 95%;
+            padding-top: 7%;
+        }
+        #men{
+            display: none;
+            height: 44%;
+            width: 34%;
+            top: 14%;
+        
+        }
+        #flamme{
+            width: 12%;
+            height: 10%;
+            top: 11%;
+            right: 88%;
+        }
+        .grid{
+            grid-template-rows: 16% 16% 16% 16% 16.2%;
+            margin-top: 2%;
+            height: 33%;
+            width: 95%;
+            row-gap: 15%;
+        }
+        #num{
+            font-size: 22pt;
+            top: 54%;
+            left: 86%;
+            width: 7%;
+            height: 4%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 3%;
+            font-size: 15pt;
+        }
+        .grid_rep{
+            grid-template-rows: 58% 16.6% 9.8%;
+            grid-template-columns: 93%;
+            margin-top: 1%;
+            width: 94%;
+            height: 54%;
+        }
+        #response_text{
+            font-size: 14pt;
+            Line-Height: 1.5;
+            text-align: justify;
+        }
+        #response_text span{
+            font-size: 120%;
+        }
+        #referance{
+            font-size: 75%;
+        }        }                       
+        sup{
+            font-size: 7pt;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 89%;
+            /* left: 3%; */
+            top: 11%;
+            font-size: 31pt;
+        }
+        #resultat{
+            width: 70%;
+            top: 12%;
+            /* left: 12%; */
+            font-size: 20pt;
+        }
+        #btn_relancer{
+            top: 39%;
+            height: 7%;
+            left: 36%;
+            width: 29%;
+        }    
+    }
+}
+
+@media only screen AND  (max-width: 319px){
+    /************spalshscreen**************/
+    .intro{
+        margin-top: 20%;
+        width: 100%;
+        height: 36%;
+    }    
+    #btn_lancer{
+        width: 43%;
+        height: 8%;
+        top: 39%;
+        left: 28%;
+    }
+    .men{
+        /* display: none; */
+        width: 35%;
+        height: 31%;
+        left: 35%;
+        top: 53%;
+    }
+    #title{
+        font-size: 9pt;
+        left: 0%;
+
+    }
+    #texte{
+        font-size: 9pt;
+        /* left: 3%; */
+        top: 49%;
+        width: 100%;
+        padding-left: 0%;
+    }
+     /*****************les slides du jeu**********************/
+     .question{
+        font-size: 9.5pt;
+        width: 90%;
+    }
+    #men{
+        display: none;
+        height: 28%;
+        width: 28%;
+    }
+    #flamme{
+        display: none;
+        width: 15%;
+        height: 9%;
+        top: 13%;
+        right: 85%;
+    }
+    .grid{
+        grid-template-rows: 10% 10% 10% 10% 11%;
+        margin-top: 0%;
+        height: 66%;
+        width: 95%;
+        row-gap: 10%;
+    }
+    #num{
+        font-size: 14pt;
+        left: 78%;
+        top: 68%;
+        width: 13%;
+    }
+    input[type='checkbox'] + label {
+        padding-bottom: 7%;
+        font-size: 7pt;
+    }
+    .grid_rep {
+        grid-template-rows: 61% 25% 12%;
+        grid-template-columns: 96%;
+        margin-top: 0%;
+        width: 96%;
+        height: 60%;
+        row-gap: 1%;
+
+    }
+    #response_text{
+        font-size: 6pt;
+        Line-Height: 1.5;
+        text-align: justify;
+    }
+    #response_text span{
+        font-size: 139%;
+    }
+    .sup{
+        font-size: 5pt;
+    }
+    #referance{
+        font-size: 40%;
+    }
+    /***********slide score **************/
+    #merci{
+        width: 95%;
+        left: 0%;
+        top: 23%;
+        font-size: 12pt;
+    }
+    #resultat{
+        width: 75%;
+        top: 26%;
+        font-size: 10pt;
+        left: 10%;
+    }
+    #btn_relancer{
+        top: 64%;
+        left: 28%;
+        height: 10%;
+        width: 47%;
+    }
+
+
+}
+
+@media (max-height: 400px){
+
+    @media only screen  AND (max-width: 500px){
+        /*****************splash screen********************/
+        .code {
+            height: 6%;
+            width: 29%;
+            margin-left: 81%;
+            font-size: 45%;
+            top: 55%;
+        }
+
+        .intro{
+            top: 10%;
+            width: 67%;
+            height: 60%;
+        }
+        #btn_lancer{
+            /* background-size: 100% 100%; */
+            width: 30%;
+            height: 13%;
+            top: 16%;
+            left: 20%;
+        }
+        .men{
+            /* background-size: 100% 80%; */
+            width: 35%;
+            height: 83%;
+            top: 2%;
+            right: 0%;
+        }
+        #title{
+            font-size: 9.5pt;
+            left: 0%;
+        }
+        #texte{
+            font-size: 9pt;
+            top: 50%;
+            width: 100%;
+            padding-left: 0%;
+        }
+        /*****************les slides du jeu**********************/
+        .question{
+            font-size: 10pt;
+            padding-top: 1%;
+        }
+        #men{
+            display: none;
+            height: 75%;
+            width: 33%;
+        }
+        #flamme{
+            width: 12%;
+            height: 14%;
+            top: 13%;
+            /* right: 80%; */
+            left: 0%;
+
+        }
+        .grid{
+            grid-template-rows: 18% 18% 18% 18% 23%;
+            margin-top: 2%;
+            width: 95%;
+        }
+        #num{
+            font-size: 12pt;
+            /* bottom: 38%; */
+            left: 84%;
+            top: 83%;
+        }
+        input[type='checkbox'] + label {
+            padding-bottom: 4%;
+            font-size: 8pt;
+            letter-spacing: 0.09em;
+        }
+        .grid_rep{
+            grid-template-rows: 88% 30% 19%;
+            margin-top: -2%;
+            width: 96%;
+            height: 61%;
+            grid-template-columns: 94%;
+            row-gap: 1%;
+
+
+        }
+        #response_text{
+            font-size: 8pt;
+            Line-Height: 1.5;
+            text-align: justify;
+        }
+        #referance{
+            font-size: 42%;
+        }
+        /***********slide score **************/
+        #merci{
+            width: 73%;
+            /* left: 7%; */
+            font-size: 16pt;
+        }
+        #resultat{
+            width: 53%;
+            top: 20%;
+            font-size: 11pt;
+        }
+        #btn_relancer{
+            top: 35%;
+            height: 10%;
+            width: 26%;
+            left: 28%;
+        }
+    }
+}

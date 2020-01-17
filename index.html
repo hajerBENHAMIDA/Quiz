@@ -1,0 +1,110 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>QUIZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+<body>
+    <!-- splash-screen -->
+    <div id="home" >  
+        <div class="intro">        
+            <span id="title">
+                Mécanismes d'actions <br>
+                des principales familles d'antibiotiques :<br>
+                Répondez aux questions et testez vos connaissances ! <br>
+            </span>
+            <span id="texte">
+                Ce quiz est destiné aux professionnels de santé <br>                
+                et traite des questions autour des mécanismes d'actions <br>    
+                des principales familles d'antibiotiques.<br>   
+                <br>                
+
+                Il vise à appuyer le professionnel de santé <br>   
+                dans sa pratique quotidienne. <br>    
+            </span>   
+   
+        </div>   
+        <div id="btn_lancer" onclick="quiz.lancer()"></div>   
+        <div class="men"></div>
+        <div class="code">
+            PM-TN-ACA-OGM-190004<br/>
+            PM-DZ-AMX-QST-190001<br/>
+            PM-MA-ACA-QST-190004<br/>   
+        </div>   
+   
+    </div> 
+
+    <!-- les slides de jeu -->
+    <div id="questions"  style="display:none" >  
+        <!-- la question -->
+        <div id="question" class="question" ></div>   
+        <!-- les propositions -->
+        <div id="answer" class="grid" >
+            
+            <input type="checkbox" name="answer" id="a1">
+            <label for="a1" class="center-grid"></label>
+            
+            <input type="checkbox" name="answer" id="a2">
+            <label for="a2" class="center-grid"></label>
+           
+            <input type="checkbox" name="answer" id="a3">
+            <label for="a3" class="center-grid" ></label>
+           
+            <input type="checkbox" name="answer" id="a4">
+            <label for="a4" class="center-grid"></label>
+            <!-- <div id="demi"> -->
+            <div id="btn_suivant_pass" onclick="quiz.pass()" ></div> 
+                <!-- <div id="globnum"> -->
+                <!-- </div>    -->
+
+        </div> 
+
+
+        <div id="num"></div> 
+
+                <!-- num question -->
+
+        <img src="assets/rouge.png" id="flamme" alt="" style="display:none" style="object-fit: contain">
+        <img src="assets/men_orange.png" id="men" alt="" style="object-fit: contain">
+
+        <!-- REPONSE -->
+        <div id="response" class='grid_rep' style="display:none">
+                <!-- <img src="assets/media/excellent/excellent-01.png" alt=""> -->
+                <div id="response_text"></div>
+                <div id="referance" ></div>
+                <div id="btn_suivant_next" onclick="quiz.next()"></div> 
+
+        </div>
+
+
+        <!-- boutton suivant -->
+    
+    </div> 
+
+    <!-- slide de resultat -->
+    <div id="score" style="display:none">  
+        <div id="merci">Merci pour votre participation</div>
+        <div id="resultat"></div>      
+        <div id="btn_relancer" onclick="quiz.relancer()"></div>   
+        <div class="men"></div>   
+    </div> 
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jq.js"></script>
+    <!-- <script src="assets/js/data.js"></script> -->
+    <script src="assets/js/quiz.js"></script>
+
+    <script>
+        $.getJSON( "assets/js/data.json", function( json ) {
+            quiz.question = json ;
+            quiz.updateHtml(); 
+            $('.preloader').fadeOut('slow');
+        })
+    </script> 
+
+</body>
+</html>

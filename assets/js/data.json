@@ -1,0 +1,82 @@
+[{
+    
+	"title" : "Parmi ces antibiotiques, lesquels agissent sur la synthèse du peptidoglycane ?",
+    "answer" : ["β-lactamines","Glycopeptides","Tétracyclines","Acide fusidique"] ,
+    "correct" : ["β-lactamines","Glycopeptides"],
+    "response" : ["Les antibiotiques qui agissent sur la synthèse du peptidoglycane sont les β-lactamines et les Glycopeptides. La fosfomycine fait également partie de cette catégorie.<sup>1</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64"]
+
+},{
+	
+	"title" : "Quelle protéine est inhibée par les β-lactamines ?",
+    "answer" : ["Peptidyl-transférase","Topoisomérases","L’ARN polymérase","PLP"] ,
+    "correct" : ["PLP"],
+    "response" : ["Les β-lactamines inhibent les PLP (Protéines de liaison à la pénicilline) impliquées dans la synthèse du peptidoglycane par fixation covalente. <sup>1</sup> Une bactérie contient plusieurs variétés de PLP. L’affinité des β-lactamines pour les PLP peut varier selon les β-lactamines et selon les PLP. <sup>1</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64"]
+
+},{
+	
+	"title" : "Parmi ces antibiotiques, lesquels inhibent la synthèse protéique ?",
+    "answer" : ["Aminosides","Tétracyclines","Phénicolés","Quinolones"] ,
+    "correct" : ["Aminosides","Tétracyclines","Phénicolés"],
+    "response" : ["Les aminosides, les tétracyclines et les Phénicolés inhibent la synthèse protéique de même que les macrolides et l’acide fusidique.<sup>1</sup> Les aminosides et les tétracyclines se fixent sur les sous-unités 30 S du ribosome bactérien.<sup>1,2,3</sup> Les Phénicolés quant à eux sur la sous-unité 50 S.<sup>1,4</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64","2.Vaubourdolle M. Infectiologie. Paris : Le Moniteur de l'Internat ; 3ème édition; 2007. p. 749","3.Vaubourdolle M. Infectiologie. Paris : Le Moniteur de l'Internat ; 3ème édition; 2007. p. 862","4.P. Bustany, Ph. D. Chaumet-Riffaud. Internat, Nouveau Programme, Pharmacologie. Thoiry : Heures de France ; 1993. p.68-75"]
+
+},{
+	
+	"title" : "Quels antibiotiques inhibent la synthèse protéique en se fixant sur la sous-unité 50 S du ribosome bactérien ?",
+    "answer" : ["Aminosides","Tétracyclines","Macrolides","Acide fusidique"] ,
+    "correct" : ["Macrolides"],
+    "response" : ["Les Macrolides se fixent sur la sous-unité 50S et inhibent l’action de la peptidyl-transférase.<sup >1,5</sup> Les acides aminés apportés par l’ARN de transfert ne peuvent plus s’incorporer aux chaines polypeptidiques, et la synthèse protéique essentielle à la survie de la bactérie s’arrête.<sup>5</sup> Les macrolides sont essentiellement bactériostatiques.<sup>1,5</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64","2.Vaubourdolle M. Infectiologie. Paris : Le Moniteur de l'Internat ; 3ème édition; 2007. p. 749"]
+
+},{
+
+	"title" : "Comment les sulfamides inhibent-ils la croissance d’une souche bactérienne ?",
+    "answer" : ["Ils libèrent des dérivés réactifs provoquant des coupures de l’ADN","Ils inhibent l’ARN polymérase","Ils inhibent la synthèse des folates","Ils inhibent le facteur d’élongation G"] ,
+    "correct" : ["Ils inhibent la synthèse des folates"],
+    "response" : ["Les sulfamides inhibent par antagonisme compétitif la synthèse des folates en inhibant la dihydroptérate synthétase.<sup>1,6</sup>Ce sont des agents bactériostatiques aux doses thérapeutiques.<sup>6</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64","6.Vaubourdolle M. Infectiologie. Paris : Le Moniteur de l'Internat ; 3ème édition; 2007. p. 847"]
+
+},{
+
+	"title" : "Quelles affirmations sont justes à propos des Sulfamides et du triméthoprime ?",
+    "answer" : ["Ils agissent à deux niveaux différents de la synthèse des folates","L’association des deux assure un effet synergique","Ils inhibent la même enzyme","L’association des deux assure un effet antagoniste"] ,
+    "correct" : ["Ils agissent à deux niveaux différents de la synthèse des folates","L’association des deux assure un effet synergique"],
+    "response" : ["Les sulfamides et le triméthoprime agissent à deux niveaux différents de la synthèse des folates ce qui leur assure un effet synergique. Les sulfamides inhibent la dihydroptérate synthétase et le triméthoprime inhibe la dihydrofolate réductase.<sup>1</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64"]
+
+},{
+
+	"title" : "Parmi ces antibiotiques, lesquels agissent au niveau de la membrane bactérienne ?",
+    "answer" : ["Quinolones","Rifamycines","Polymyxines","Fosfomycine"] ,
+    "correct" : ["Fosfomycine"],
+    "response" : ["Les Polymyxines se fixent sur les membranes bactériennes (en particulier la membrane externe des bactéries gram négatif) et les désorganisent. L’antibiotique le plus utilisé est la colistine.<sup>1</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64"]
+
+},{
+
+	"title" : "De quelle manière les tétracyclines inhibent-ils la synthèse protéique ?",
+    "answer" : ["Ils se fixent sur la sous-unité 30 S","Ils Inhibent la fixation de l’ARNt sur le complexe ARNm-ribosome","Ils Inhibent l’action de la peptidyl-transférase","Ils se fixent sur la sous-unité 50 S"] ,
+    "correct" : ["Ils se fixent sur la sous-unité 30 S","Ils Inhibent la fixation de l’ARNt sur le complexe ARNm-ribosome"],
+    "response" : ["Les tétracyclines se fixent sur la sous-unité 30 S et inhibent la fixation du complexe aminoacide ARNt sur le complexe ARNm-ribosome.<sup>3</sup> Les tétracyclines sont des antibiotiques bactériostatiques.<sup>3</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64","3.Vaubourdolle M. Infectiologie. Paris : Le Moniteur de l'Internat ; 3ème édition; 2007. p. 862"]
+
+},{
+
+	"title" : "Quelles affirmations sont justes à propos des β-lactamines ?",
+    "answer" : ["Elles se fixent de manières covalentes au PLP","Leur association avec un aminoside est synergique","Leur association avec un antibiotique bactériostatique peut avoir un effet antagoniste","Elles sont bactéricides"] ,
+    "correct" : ["Elles se fixent de manières covalentes au PLP","Leur association avec un aminoside est synergique","Leur association avec un antibiotique bactériostatique peut avoir un effet antagoniste","Elles sont bactéricides"],
+    "response" : ["Les β-lactamines se fixent de manière covalente sur les PLP. Leur association avec un aminoside est en règle synergique. Par contre leur association avec des antibiotiques bactériostatiques tels que le chloramphénicol ou les tétracyclines peut avoir un effet antagoniste.<sup>1</sup> Les β-lactamines sont bactéricides.<sup>1</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64"]
+
+},{
+	"title" : "Quelle affirmation est juste à propos des glycopeptides ?",
+    "answer" : ["Ils se fixent de manière covalente sur des peptides impliqués dans la phase de polymérisation du peptidoglycane","Ils sont bactériostatiques","Ils se fixent de manière non covalente sur des peptides impliqués dans la phase de polymérisation du peptidoglycane","Ils inhibent par antagonisme compétitif des peptides impliqués dans la phase de polymérisation du peptidoglycane"] ,
+    "correct" : ["Ils se fixent de manière non covalente sur des peptides impliqués dans la phase de polymérisation du peptidoglycane"],
+    "response" : ["Les glycopeptides se fixent de manière non covalente sur la partie D-Ala-D-Ala terminale des peptides impliqués dans la phase de polymérisation du peptidoglycane. La vancomycine et la teicoplamine qui appartiennent à ce groupe sont bactéricides.<sup>1</sup>"],
+    "ref":["1.C.Nauciel. Bactériologie médicale. Paris : Masson ; 2000. p.55-64"]
+
+}
+
+];
